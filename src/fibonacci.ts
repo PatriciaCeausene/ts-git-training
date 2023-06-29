@@ -1,6 +1,4 @@
 export const computeFibonacciNumber = (position: number, isRecursive: boolean = false): number => {
-    if (isRecursive) return recursiveFibonacci(position);
-    
     if (position === 0) {
         return 0;
     }
@@ -15,7 +13,6 @@ export const computeFibonacciNumber = (position: number, isRecursive: boolean = 
     if (notNullPosition <= 2) {
         return 1;
     }
-
     let i = 1;
     let j = 1;
     let currentPosition = 2;
@@ -27,6 +24,7 @@ export const computeFibonacciNumber = (position: number, isRecursive: boolean = 
     }
     return j;
 };
+
 
 const computeNegativeFibonacci = (position: number): number => {
     if (position >= 0) {
